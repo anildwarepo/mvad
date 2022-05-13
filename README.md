@@ -15,12 +15,12 @@ This requires the below Azure services to be provisioned.
 [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
 
 ## Anomaly Detection using one network node as training data set
-mvad-networknodes.ipynb notebooks uses a given network node id as source data for training the MVAD model. This trained model is to inference anomaly in another network node. This can be used if there isn't too much variation in data value ranges across the network nodes. 
+mvad-networknodes.ipynb notebook uses a given network node id as source data for training the MVAD model. This trained model is to inference anomaly in another network node. This can be used if there isn't too much variation in data value ranges across the network nodes. 
 
 ![Anomaly Detection across different node with quite a bit of data variation](bokeh_plot_different_nodes.png)
 
 ## Anomaly Detection using one network node as both training and inference data set
-mvad-networknodes-same-dataset.ipynb notebooks uses a given network node id as source data for training the MVAD service. This trained model is used to inference anomaly across the same node id used in the training but across a different sliding window. 
+mvad-networknodes-same-dataset.ipynb notebook uses a given network node id as source data for training the MVAD service. This trained model is used to inference anomaly across the same node id used in the training but across a different sliding window. 
 
 ![Anomaly Detection across different node with quite a bit of data variation](bokeh_plot_same_node.png)
 
