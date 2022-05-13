@@ -14,6 +14,14 @@ This requires the below Azure services to be provisioned.
 
 [Azure Blob Storage](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/)
 
+## Setup 
+
+Update the Azure Blob Storage connection string and Anomaly Detector Service key and name in set-env.env file. 
+
+        AZURE_STORAGE_CONNECTION_STRING="<Storage Connection String>"
+        OCP_APIM_SUBCRIPTION_KEY="<Azure Anomalydetector Serive Key>"
+        ENDPOINT="<Anomalydetector Service Name>.cognitiveservices.azure.com/anomalydetector/v1.1-preview"
+
 ## Anomaly Detection using one network node as training data set
 mvad-networknodes.ipynb notebook uses a given network node id as source data for training the MVAD model. This trained model is to inference anomaly in another network node. This can be used if there isn't too much variation in data value ranges across the network nodes. 
 
