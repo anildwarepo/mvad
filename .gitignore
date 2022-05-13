@@ -3,3 +3,4 @@ Datasets-2/
 set-env-local.env
 *dataset_type_1/
 *.zip
+.gitignore
